@@ -1,0 +1,46 @@
+// ===== Commom flags =================================
+process: QCD_Pt-20toInf_MuEnriched
+scaleFactor: 1.0
+scaleFactorError: 0.0
+// ====================================================
+
+// ===== Flags for NormalizeHistos.cpp ================
+rootfile: FILE/QCD_Pt-20toInf_MuEnrichedPt15_TuneCUETP8M1_13TeV_pythia8_50ns.root
+directory: DIRECTORY
+xsection: 720648000
+skimmingEff: 0.00042
+skimmingEffError: 0.0
+luminosity: 10000.
+isdata: False
+OutputFilePath: PATH
+NormOutputFileName: normalizedHistos_QCD_Pt-20toInf_MuEnriched.root
+NormToOneOutputFileName: normalizedToOneHistos_QCD_Pt-20toInf_MuEnriched.root
+// ====================================================
+
+// ===== Flags for StackPlotter.cpp ===================
+usedata: False
+setLogScale: True
+isSignal: False
+Normalizedrootfile: INPUTDIREC/normalizedHistos_QCD.root
+applyScaleFactor: True
+rebinHistoName: 
+rebinFactor: 1
+lineStyle: 1
+lineWidth: 1
+legend: QCD
+color: 40
+outputRootFileStackedHistos: StackedPlots.root
+logFilename: output_NormalizePlotter
+// ====================================================
+
+//======Flags for Limits
+
+inputDataDrivenBG: True
+
+//===== Flags for UnitPlotter =========================
+marketStyle: 24
+outputRootFileHistos: UnitPlots.root
+
+//====== Flags for EfficiencyPlotter =================
+NormalizedrootfileNum: INPUTDIRECNUM/normalizedHistos_QCD_Pt-20toInf_MuEnriched.root
+NormalizedrootfileDen: INPUTDIRECDEN/normalizedHistos_QCD_Pt-20toInf_MuEnriched.root

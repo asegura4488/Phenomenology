@@ -1,0 +1,395 @@
+histoName DiMuonDiJetReconstructableMass_0
+xrange_min 0.0
+xrange_max 5000.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle m(#mu,#mu, j, j)[GeV]
+ytitle Events
+rebin 2
+
+histoName DiMuonReconstructableMass_0
+xrange_min 0.0
+xrange_max 500.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle m(#mu,#mu)[GeV]
+ytitle Events
+rebin 2
+
+histoName FirstLeadingJetPt_0
+xrange_min 30.0
+xrange_max 500.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle p_{T}(jet^{led}_{1})[GeV]
+ytitle Events
+rebin 2
+
+histoName FirstLeadingTauJet1Pt_0
+xrange_min 50.0
+xrange_max 300.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle p_{T}(#tau)[GeV]
+ytitle Events
+rebin 2
+
+histoName FirstLeadingTauJet2Pt_0
+xrange_min 50.0
+xrange_max 300.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle p_{T}(#tau)[GeV]
+ytitle Events
+rebin 2
+
+histoName TauJet1Pt_0
+xrange_min 50.0
+xrange_max 300.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle p_{T}(#tau)[GeV]
+ytitle Events
+rebin 2
+
+histoName LeadDiJetMass_0
+xrange_min 0.0
+xrange_max 300.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle m(j,j)[GeV/c^{2}]
+ytitle Events
+rebin 1
+
+histoName Muon1Tau1PZeta_0
+xrange_min -100.0
+xrange_max 100.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle p_{zeta}(#mu,#tau)[GeV]
+ytitle Events
+rebin 8
+
+histoName HT_0
+xrange_min 150.0
+xrange_max 1000.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle H_{T}[GeV]
+ytitle Events
+rebin 2
+
+histoName Jet1Pt_0
+xrange_min 30.0
+xrange_max 500.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle p_{T}(jet_{1})[GeV]
+ytitle Events
+rebin 5
+
+histoName Jet2Pt_0
+xrange_min 30.0
+xrange_max 500.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle p_{T}(jet_{2})[GeV]
+ytitle Events
+rebin 2
+
+histoName Meff_0
+xrange_min 0.0
+xrange_max 1000.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle M_{eff}[GeV/c^{2}]
+ytitle Events
+rebin 10
+
+histoName DiJetMass_0
+xrange_min 0.0
+xrange_max 3000.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle M_{Dijet}[GeV/c^{2}]
+ytitle Events
+rebin 10
+
+histoName Met_0
+xrange_min 0
+xrange_max 500
+yrange_min 0.01
+yrange_max 10000.0
+xtitle E^{miss}_{T}[GeV]
+ytitle Events
+rebin 1
+
+histoName MHT_0
+xrange_min 0.0
+xrange_max 500.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle MHT[GeV] 
+ytitle Events
+rebin 2
+
+histoName FirstLeadingMuon1Pt_0
+xrange_min 20.0
+xrange_max 200.0
+yrange_min 0.01
+yrange_max 300.0
+xtitle p_{T}(#mu_{lead})[GeV]
+ytitle Events
+rebin 2
+
+histoName Muon1Pt_0
+xrange_min 30.0
+xrange_max 200.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle p_{T}(#mu_{lead})[GeV]
+ytitle Events
+rebin 2
+
+histoName Muon2Pt_0
+xrange_min 30.0
+xrange_max 200.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle p_{T}(#mu_{slead})[GeV]
+ytitle Events
+rebin 2
+
+histoName Muon1MetMt_0
+xrange_min 0.0
+xrange_max 500.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle m_{T}(#mu,E^{miss}_{T})[GeV/c^{2}]
+ytitle Events
+rebin 1 
+
+histoName NJet1_0
+xrange_min 0.0
+xrange_max 4.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle N(jet_{1})
+ytitle Events
+rebin 1
+
+histoName NMuon1_0
+xrange_min 0.0
+xrange_max 4.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle N(#mu_{1})
+ytitle Events
+rebin 1
+
+histoName NPVertices_0
+xrange_min 0.0
+xrange_max 40.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle N_{vtx}
+ytitle Events
+rebin 1
+
+histoName SecondLeadingJetPt_0
+xrange_min 30.0
+xrange_max 500.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle p_{T}(jet^{slead}_{2})
+ytitle Events
+rebin 2
+
+histoName TauJet1Pt_0
+xrange_min 20.0
+xrange_max 200.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle p_{T}(#tau_{had})[GeV] 
+ytitle Events
+rebin 2
+
+histoName TauJet2Pt_0
+xrange_min 50.0
+xrange_max 300.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle p_{T}(#tau_{had})[GeV]
+ytitle Events
+rebin 2
+
+histoName Jet1Eta_0
+xrange_min -3.0
+xrange_max 3.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle #eta_{j_{lead}}
+ytitle Events
+rebin 1
+
+histoName FirstLeadingTauJet1Eta_0
+xrange_min -3.0
+xrange_max 3.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle #eta_{#tau_{lead}}
+ytitle Events
+rebin 1
+
+histoName FirstLeadingTauJet2Eta_0
+xrange_min -3.0
+xrange_max 3.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle #eta_{#tau_{slead}}
+ytitle Events
+rebin 1
+
+histoName Jet2Eta_0
+xrange_min -3.0
+xrange_max 3.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle #eta_{j_{slead}}
+ytitle Events
+rebin 1
+
+histoName FirstLeadingJetEta_0
+xrange_min -3.0
+xrange_max 3.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle #eta_{j_{lead}}
+ytitle Events
+rebin 2
+
+histoName SecondLeadingJetEta_0
+xrange_min -3.0
+xrange_max 3.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle #eta_{j_{slead}}
+ytitle Events
+rebin 2
+
+histoName FirstLeadingMuon1Eta_0
+xrange_min -3.0
+xrange_max 3.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle #eta_{#mu_{lead}}
+ytitle Events
+rebin 2
+
+histoName Muon1Eta_0
+xrange_min -3.5
+xrange_max 3.5
+yrange_min 0.01
+yrange_max 10000.0
+xtitle #eta_{#mu}
+ytitle Events
+rebin 2
+
+histoName Muon2Eta_0
+xrange_min -2.5
+xrange_max 2.5
+yrange_min 0.01
+yrange_max 300.0
+xtitle #eta_{#mu}
+ytitle Events
+rebin 2
+
+histoName Tau1Eta_0
+xrange_min -2.5
+xrange_max 2.5
+yrange_min 0.01
+yrange_max 10000.0
+xtitle #eta_{#tau}
+ytitle Events
+rebin 8
+
+histoName Tau2Eta_0
+xrange_min -2.5
+xrange_max 2.5
+yrange_min 0.01
+yrange_max 10000.0
+xtitle #eta_{#tau}
+ytitle Events
+rebin 8
+
+histoName SecondLeadingJetEta_0
+xrange_min -5.0
+xrange_max 5.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle #eta_{#mu_{slead}}
+ytitle Events
+rebin 4
+
+histoName LeadDiJetDeltaEta_0
+xrange_min 3.0
+xrange_max 10.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle #Delta#eta(j_{lead},j_{subl})
+ytitle Events
+rebin 2
+
+histoName LeadDiJetDeltaPhi_0
+xrange_min 0.0
+xrange_max 4.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle #Delta#phi(j_{lead},j_{subl})
+ytitle Events
+rebin 1
+
+histoName LeadDiJetDeltaR_0
+xrange_min 0.0
+xrange_max 10.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle #DeltaR(j_{lead},j_{subl})
+ytitle Events
+rebin 2
+
+histoName Muon1Tau1DeltaR_0
+xrange_min 0.0
+xrange_max 5.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle #DeltaR(#mu,#tau)
+ytitle Events
+rebin 2
+
+histoName Muon1Tau1CosDphi_0
+xrange_min -1.0
+xrange_max 1.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle Cos(#Delta#phi(#mu,#tau))
+ytitle Events
+rebin 2
+
+histoName Muon1Tau1ReconstructableMass_0
+xrange_min 0.0
+xrange_max 1500.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle m(#mu,#tau)
+ytitle Events
+rebin 1
+
+histoName Muon1Tau1OSLS_0
+xrange_min -3.0
+xrange_max 3.0
+yrange_min 0.01
+yrange_max 10000.0
+xtitle Q(#mu)*Q(#tau)
+ytitle Events
+rebin 1

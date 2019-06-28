@@ -1,0 +1,80 @@
+histoName bjet_plus_lep
+xrange_min 0.0
+xrange_max 500.0
+yrange_min 0.001
+yrange_max 0.3
+xtitle P_{T}(b)+P_{T}(l)[GeV]
+ytitle a.u
+rebin 2
+
+histoName bjet_ratio_pT
+xrange_min 0.0
+xrange_max 1.0
+yrange_min 0.001
+yrange_max 0.06
+xtitle P_{T}(b)/(P_{T}(b)+P_{T}(l))[GeV]
+ytitle a.u
+rebin 2
+
+histoName mt
+xrange_min 0.0
+xrange_max 1000.0
+yrange_min 0.001
+yrange_max 0.3
+xtitle m_{T}(lep,MET)[GeV]
+ytitle a.u
+rebin 2
+
+histoName pT_bl
+xrange_min 0.0
+xrange_max 500.0
+yrange_min 0.001
+yrange_max 0.3
+xtitle #vec{P}_{T}(b+l)[GeV]
+ytitle a.u
+rebin 2
+
+histoName pT_t
+xrange_min 0.0
+xrange_max 500.0
+yrange_min 0.001
+yrange_max 0.3
+xtitle p_{T}(t)[GeV]
+ytitle a.u
+rebin 2
+
+histoName pT_w
+xrange_min 0.0
+xrange_max 500.0
+yrange_min 0.0
+yrange_max 0.3
+xtitle p_{T}(W)[GeV]
+ytitle a.u
+rebin 2
+
+histoName e_t_over_b
+xrange_min 0.0
+xrange_max 3.0
+yrange_min 0.0
+yrange_max 0.4
+xtitle E(b)/E(t)[GeV]
+ytitle a.u
+rebin 2
+
+histoName e_top
+xrange_min 150.0
+xrange_max 500.0
+yrange_min 0.001
+yrange_max 0.5
+xtitle E(t)[GeV]
+ytitle a.u
+rebin 2
+
+histoName met
+xrange_min 0.0
+xrange_max 500.0
+yrange_min 0.001
+yrange_max 0.3
+xtitle MET[GeV]
+ytitle a.u
+rebin 2

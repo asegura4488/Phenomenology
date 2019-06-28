@@ -1,0 +1,42 @@
+// ===== Commom flags =================================
+process: DYTOLL
+scaleFactor: 1.0
+scaleFactorError: 0.0
+// ====================================================
+
+// ===== Flags for NormalizeHistos.cpp ================
+rootfile: FILE/DY+jets.root
+directory: DIRECTORY
+xsection: 2240.
+skimmingEff: 1.0
+skimmingEffError: 0.0
+luminosity: 30.
+isdata: False
+OutputFilePath: PATH
+NormOutputFileName: normalizedHistos_DYToLL.root
+NormToOneOutputFileName: normalizedToOneHistos_DYToLL.root
+// ====================================================
+
+// ===== Flags for StackPlotter.cpp ===================
+usedata: False
+setLogScale: False
+isSignal: False
+Normalizedrootfile: Normalize_directories/Staus_After_jet_pt_cut_1Tau/normalizedHistos_DYToLL.root
+applyScaleFactor: False
+rebinHistoName: 
+rebinFactor: 1
+lineStyle: 1
+lineWidth: 1
+legend: DY#rightarrowll+jets
+color: 4
+outputRootFileStackedHistos: StackedPlots.root
+logFilename: output_NormalizePlotter
+// ====================================================
+
+//===== Flags for UnitPlotter =========================
+marketStyle: 20
+outputRootFileHistos: UnitPlots.root
+
+//====== Flags for EfficiencyPlotter =================
+NormalizedrootfileNum: Normalize_directories/Staus_After_jet_pt_cut_1TauNUM/normalizedHistos_DYToLL.root
+NormalizedrootfileDen: Normalize_directories/Staus_After_jet_pt_cut_1TauDEN/normalizedHistos_DYToLL.root

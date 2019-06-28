@@ -1,0 +1,19 @@
+histoName bjet_plus_lep
+xrange_min 0.0
+xrange_max 500.0
+yrange_min 0.001
+yrange_max 0.2
+xtitle P_{T}(b)+P_{T}(l)[GeV]
+ytitle a.u
+rebin 1
+
+histoName bjet_ratio_pT
+xrange_min 0.0
+xrange_max 1.0
+yrange_min 0.001
+yrange_max 0.2
+xtitle P_{T}(b)/(P_{T}(b)+P_{T}(l))[GeV]
+ytitle a.u
+rebin 1
+
+

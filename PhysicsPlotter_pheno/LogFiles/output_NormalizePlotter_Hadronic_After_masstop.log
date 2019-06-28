@@ -1,0 +1,51 @@
+
+
+ROOTFile /home/masegura10/PhysicsPlotter_pheno/data/DY+jets.root
+Directory Hadronic_After_masstop
+Process DYTOLL
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 0
+EventsAnalysed 2.91968e+07
+EventsPassing 1
+CumulativeEfficiency 3.42503e-08
+
+ROOTFile /home/masegura10/PhysicsPlotter_pheno/data/singletop.root
+Directory Hadronic_After_masstop
+Process singletop 
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 55
+EventsAnalysed 2.76665e+07
+EventsPassing 48
+CumulativeEfficiency 1.73495e-06
+
+ROOTFile /home/masegura10/PhysicsPlotter_pheno/data/monotop1jet_left.root
+Directory Hadronic_After_masstop
+Process signal2
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 55
+EventsAnalysed 1.05552e+06
+EventsPassing 57999
+CumulativeEfficiency 0.0549484
+
+ROOTFile /home/masegura10/PhysicsPlotter_pheno/data/monotop1jet_right.root
+Directory Hadronic_After_masstop
+Process signal2
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 55
+EventsAnalysed 1.04149e+06
+EventsPassing 48979
+CumulativeEfficiency 0.047028
+
+ROOTFile /home/masegura10/PhysicsPlotter_pheno/data/monotop1jet_full.root
+Directory Hadronic_After_masstop
+Process signal2
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 55
+EventsAnalysed 383994
+EventsPassing 19598
+CumulativeEfficiency 0.0510373

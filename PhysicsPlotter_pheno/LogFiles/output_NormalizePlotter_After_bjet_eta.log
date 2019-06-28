@@ -1,0 +1,91 @@
+
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/DY+jets.root
+Directory After_bjet_eta
+Process DYTOLL
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 0
+EventsAnalysed 2.91968e+07
+EventsPassing 20346
+CumulativeEfficiency 0.000696857
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/W+jets.root
+Directory After_bjet_eta
+Process wjets 
+SkimmingEfficiency 1
+SkimmingEfficiencyError 1
+NumberOfHistorgams 39
+EventsAnalysed 4.30756e+07
+EventsPassing 26986
+CumulativeEfficiency 0.000626479
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/singletop.root
+Directory After_bjet_eta
+Process singletop 
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 39
+EventsAnalysed 4.61109e+06
+EventsPassing 94473
+CumulativeEfficiency 0.0204882
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/ttbar_semileptonico.root
+Directory After_bjet_eta
+Process t\bar{t}-semi
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 39
+EventsAnalysed 3.11135e+07
+EventsPassing 102670
+CumulativeEfficiency 0.00329985
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/ttbar_dileptonico.root
+Directory After_bjet_eta
+Process t\bar{t}-di
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 39
+EventsAnalysed 1.15527e+07
+EventsPassing 296431
+CumulativeEfficiency 0.0256591
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/monotop_left.root
+Directory After_bjet_eta
+Process signal
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 39
+EventsAnalysed 2e+06
+EventsPassing 324485
+CumulativeEfficiency 0.162243
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/monotop_right.root
+Directory After_bjet_eta
+Process signal
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 39
+EventsAnalysed 2e+06
+EventsPassing 263980
+CumulativeEfficiency 0.13199
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/monotop1jet_left.root
+Directory After_bjet_eta
+Process signal2
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 39
+EventsAnalysed 1.05552e+06
+EventsPassing 122803
+CumulativeEfficiency 0.116344
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/monotop1jet_right.root
+Directory After_bjet_eta
+Process signal2
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 39
+EventsAnalysed 1.04149e+06
+EventsPassing 98701
+CumulativeEfficiency 0.0947694

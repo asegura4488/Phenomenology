@@ -1,0 +1,42 @@
+// ===== Commom flags =================================
+process: DYTOLL_10to50
+scaleFactor: 1.0
+scaleFactorError: 0.0
+// ====================================================
+
+// ===== Flags for NormalizeHistos.cpp ================
+rootfile: FILE/DYJetsToLL_M-5to50_Asympt25ns.root
+directory: DIRECTORY
+xsection: 71310.
+skimmingEff: 0.986397
+skimmingEffError: 0.0
+luminosity: 2110.
+isdata: False
+OutputFilePath: PATH
+NormOutputFileName: normalizedHistos_DYToLL_10to50.root
+NormToOneOutputFileName: normalizedToOneHistos_DYToLL_10to50.root
+// ====================================================
+
+// ===== Flags for StackPlotter.cpp ===================
+usedata: True
+setLogScale: True
+isSignal: False
+Normalizedrootfile: INPUTDIREC/normalizedHistos_DYToLL_10to50.root
+applyScaleFactor: False
+rebinHistoName: 
+rebinFactor: 1
+lineStyle: 1
+lineWidth: 1
+legend: DY#rightarrowll+jets
+color: 4
+outputRootFileStackedHistos: StackedPlots.root
+logFilename: output_NormalizePlotter
+// ====================================================
+
+//===== Flags for UnitPlotter =========================
+marketStyle: 20
+outputRootFileHistos: UnitPlots.root
+
+//====== Flags for EfficiencyPlotter =================
+NormalizedrootfileNum: INPUTDIRECNUM/normalizedHistos_DYToLL_0j.root
+NormalizedrootfileDen: INPUTDIRECDEN/normalizedHistos_DYToLL_0j.root

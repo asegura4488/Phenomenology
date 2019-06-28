@@ -1,0 +1,8 @@
+import model ssmzp_v4
+generate p p > zp j j QCD=0, zp > mu+ mu-
+output FOLDEREVENTS/SUBFOLDERNAME_SEED -f
+launch -m
+NUMBERCORES
+pythia=OFF 
+FOLDEREVENTS/RunCards/run_card_SEED.dat
+FOLDEREVENTS/ParamCard/param_card.dat

@@ -1,0 +1,71 @@
+
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/DY+jets.root
+Directory After_DeltaPhi_el
+Process DYTOLL
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 0
+EventsAnalysed 2.91968e+07
+EventsPassing 352
+CumulativeEfficiency 1.20561e-05
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/W+jets.root
+Directory After_DeltaPhi_el
+Process wjets 
+SkimmingEfficiency 1
+SkimmingEfficiencyError 1
+NumberOfHistorgams 40
+EventsAnalysed 4.30756e+07
+EventsPassing 93
+CumulativeEfficiency 2.15899e-06
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/singletop.root
+Directory After_DeltaPhi_el
+Process singletop 
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 40
+EventsAnalysed 9.2221e+06
+EventsPassing 3117
+CumulativeEfficiency 0.000337993
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/ttbar_semileptonico.root
+Directory After_DeltaPhi_el
+Process t\bar{t}-semi
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 40
+EventsAnalysed 3.11135e+07
+EventsPassing 2598
+CumulativeEfficiency 8.35006e-05
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/ttbar_dileptonico.root
+Directory After_DeltaPhi_el
+Process t\bar{t}-di
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 40
+EventsAnalysed 1.15527e+07
+EventsPassing 17256
+CumulativeEfficiency 0.00149368
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/monotop1jet_left.root
+Directory After_DeltaPhi_el
+Process signal2
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 40
+EventsAnalysed 1.05552e+06
+EventsPassing 17850
+CumulativeEfficiency 0.0169111
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/monotop1jet_right.root
+Directory After_DeltaPhi_el
+Process signal2
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 40
+EventsAnalysed 1.04149e+06
+EventsPassing 16379
+CumulativeEfficiency 0.0157266

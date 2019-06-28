@@ -1,0 +1,11 @@
+import model mssm
+define l+ = e+ mu+ ta+
+define l- = e- mu- ta-
+generate p p > ta2+ ta2- j , (ta2+ > ta+  n1), (ta2- > ta- n1)   QCD=1   @1
+output FOLDEREVENTS/SUBFOLDERNAME_SEED -f
+launch -m
+NUMBERCORES
+pythia=OFF
+FOLDEREVENTS/RunCards/run_card_SEED.dat
+FOLDEREVENTS/RunCards/pythia_card_SEED.dat
+FOLDEREVENTS/ParamCard/param_card.dat

@@ -1,0 +1,71 @@
+
+
+ROOTFile /Users/florez/PhysicsPlotter_pheno/data/DY+jets.root
+Directory After_bpluslep_mu
+Process DYTOLL
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 0
+EventsAnalysed 2.91968e+07
+EventsPassing 22298
+CumulativeEfficiency 0.000763713
+
+ROOTFile /Users/florez/PhysicsPlotter_pheno/data/W+jets.root
+Directory After_bpluslep_mu
+Process wjets 
+SkimmingEfficiency 1
+SkimmingEfficiencyError 1
+NumberOfHistorgams 39
+EventsAnalysed 4.30756e+07
+EventsPassing 20458
+CumulativeEfficiency 0.000474932
+
+ROOTFile /Users/florez/PhysicsPlotter_pheno/data/singletop.root
+Directory After_bpluslep_mu
+Process singletop 
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 39
+EventsAnalysed 4.61109e+06
+EventsPassing 106483
+CumulativeEfficiency 0.0230928
+
+ROOTFile /Users/florez/PhysicsPlotter_pheno/data/monotop_left.root
+Directory After_bpluslep_mu
+Process signal
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 39
+EventsAnalysed 2e+06
+EventsPassing 7023
+CumulativeEfficiency 0.0035115
+
+ROOTFile /Users/florez/PhysicsPlotter_pheno/data/monotop_right.root
+Directory After_bpluslep_mu
+Process signal
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 39
+EventsAnalysed 2e+06
+EventsPassing 6924
+CumulativeEfficiency 0.003462
+
+ROOTFile /Users/florez/PhysicsPlotter_pheno/data/monotop1jet_left.root
+Directory After_bpluslep_mu
+Process signal2
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 39
+EventsAnalysed 1.05552e+06
+EventsPassing 11982
+CumulativeEfficiency 0.0113518
+
+ROOTFile /Users/florez/PhysicsPlotter_pheno/data/monotop1jet_right.root
+Directory After_bpluslep_mu
+Process signal2
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 39
+EventsAnalysed 1.04149e+06
+EventsPassing 11821
+CumulativeEfficiency 0.0113501

@@ -1,0 +1,16 @@
+// For Jets
+lead_jet_pt: Pt	 
+slead_jet_pt: 90 	
+jet_eta_max: 5.0
+jet_eta_min: 2.0
+jj_delta_eta_min:4.2 
+jj_mass_min: 100
+b_jet_pt_min: 20.0
+DR_jet_elec_max: 0.3
+// For Taus
+tau1_pt_min: 10.0
+tau2_pt_min: 10.0
+tau3_pt_min: 10.0
+tau_eta_max: 2.5
+met_min: 100
+ 

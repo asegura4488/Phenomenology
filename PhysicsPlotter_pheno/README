@@ -1,0 +1,103 @@
+//============================ 
+// Getting the code 
+//===========================
+
+1. Download the code from here:
+
+https://www.dropbox.com/sh/cxbgyqv9drfsp6d/Cg5uuAij3l
+
+Inside the "data" directory, there are a few root files to be used for testing purposes.
+
+2. If you do not use a MAC system, open all the ".sh" scripts and remove the ".bak" down below by the "sed" command.
+
+3. You need to run in two steps in order to get the stack plots (I will explain latter why):
+
+//==================================
+//  Normalizing the plots 
+//==================================
+
+a. To normalize the histograms to luminosity and cross section, do:  
+
+> sh RunNormalizeHistos.sh outputDirectory
+
+"outputDirectory" is just a name, it can be anything you'd like. This might take a few minutes since currently we have 576 histograms per file. 
+After running the code, go to the "outputDirectory" and you'll find a set of subdirectories. The subdirectories correspond to the cuts ran over and/or the 
+cuts you wanted to make the histograms for. Keep in mind that the cuts are applied sequestially on the EDAnalyzer. Therefore, cut3 (e.g RecoMuon2Nmin) has also 
+cuts 1 and 2 already applied. You have control over the subdirectories you'd like to run over. The subdirectories can be added or removed from an input file 
+called "directories.in" stored inside the "config" directory. You also have control over the processes you'd like to include (e.g data, ttbar, wjets etc).
+The processes can be found at "config/NormalizeHistos.in". Be aware that data is not normalized to anything, but you need to run over it, in order to get the 
+proper format of the plots, to be used latter when making the stack plots or the plots normalized to unity.
+
+Many times you have several MC samples binned on pT or with a different jet multiplicity. You need to normalize them first and then you can add then to make 
+the plot. For example, imagine a W+jets sample divided as w1jets, w2jets, w3jets etc. Each process has its own cross section, you need to properly normalize 
+each plot using the "RunNormalizeHistos.sh". Neverhtless, you most likely want to plot only a single W+jets process and not one per jet multiplicity. Therefore, 
+after normalizing each process, you can combine all the W+Jets processes, using an script called "add.sh". The script is very simple to use, only make sure 
+you take a look at it before you use it. The same applies for other cases, for example, diboson samples. If you run over the test root files in this package, 
+you can all all the dibison samples, per cathegory: WW, WZ, ZZ, buy doing:
+
+> sh add.sh ZZ outputDirectory
+> sh add.sh WW outputDirectory
+> sh add.sh WZ outputDirectory
+
+So, you'll get only one file for all the ZZ processes, one for all the WW and one for all the WZ ones.
+
+//==============================
+// Output log files
+//==============================
+
+After running the normalization step, you will get a set of output log files, per each cut. The log files can be found inside the directory "LogFiles".
+
+//=================================
+//  Making the stacks
+//=================================
+
+b. To make the stack plots you can run in the following way: 
+
+sh RunStackHistos.sh outputDirectory outputDirectoryStacks
+
+The first parameter "outputDirectory" is the name of the directory where the normalized histos are and the second parameter 
+"outputDirectoryStacks" can be anything you'd like. After running this, a directory called "outputDirectoryStacks" with thr output 
+of all the stack histos will be created. Inside this directoy, you'll find a set of subdirectories, one per cut, each with 
+a set of stacked plots in "PDF" format and a root file "StackedPlots.root". The plots in PDF format, are the ones that were 
+defined in the file "config/style.in". If can add or remove plots in this file, depending on your needs.  
+
+//================================
+// Making plots norlized to Unity
+//================================
+
+You also can make overlaid plots of the different processes normalized to unity. In order to do that, you need to run:
+
+> sh RunUnitPlotter.sh outputDirectory outputDirectoryUnity
+
+The "RunUnitPlotter.sh" script uses as input the "StackPlotter.in" to determine which processes to run over. It also used the "directories.in" 
+to determine which subdiretories (cuts) the user wants to make plots for.
+
+//================================
+// Efficiency tables
+//================================
+
+You can also make efficiency tables! To run the code do:
+
+> sh RunMakeEfficiencyTable.sh > Table.log
+
+The processes you'd like to make the efficiency table for, are defined at "config/LogProcesses.in". The code uses the output log files obtained after the 
+normalization step. The table is printed in a very close, but not perfect, LaTex format. You need to change by had a few things, such as the number of columns
+in the "tabular" part and also use meaningful names for the cuts. The cuts apper with the name of the sub-directory.
+
+//==============================
+//  Configuration
+//==============================
+
+As mentioned before, inside the configuration directory, you'll fine the configuration files for data and MC samples. You can set colors, line styles, line colors,
+leged for the different processes etc. Also, you can define if you'd like the stacked plots to be on linear of log scale using the "setLogScale" flag. In order to 
+to this last part, you need to change the flag in all the config files. There is an script called "changeInputFiles.sh" in order to do this. Finally, if you'd like
+to make MC only plots,you need to ser the "usedata" flag to False in all the config files (use the "changeInputFiles.sh") script. 
+
+//============================
+// IMPORTANT REMARK
+//===========================
+
+This code is under development. This version is very complete but it is not perfect yet. I will include several features in the next few weeks, such as tools to 
+process 2D and 3D plots among others. 
+
+Please let me know if you have any troubles running the code: andres.florez@NONONOSPAM.cern.ch

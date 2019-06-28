@@ -1,0 +1,37 @@
+// ===== Commom flags =================================
+process: ZZinclusive
+scaleFactor: 1.0
+scaleFactorError: 0.0
+// ====================================================
+
+// ===== Flags for NormalizeHistos.cpp ================
+rootfile: FILE/ZZ_Asympt25ns.root
+directory: DIRECTORY
+xsection: 16.523
+skimmingEff: 0.987963
+skimmingEffError: 0.0
+luminosity: 2110.
+isdata: False
+OutputFilePath: PATH
+NormOutputFileName: normalizedHistos_ZZinclusive.root
+NormToOneOutputFileName: normalizedToOneHistos_ZZinclusive.root
+// ====================================================
+
+// ===== Flags for StackPlotter.cpp ===================
+usedata: True
+isSignal: False
+Normalizedrootfile: INPUTDIREC/normalizedHistos_ZZinclusive.root
+applyScaleFactor: False
+rebinHistoName: 
+rebinFactor: 1
+lineStyle: 1
+lineWidth: 1
+legend: ZZinclusive
+color: 4
+outputRootFileStackedHistos: StackedPlots.root
+logFilename: output_NormalizePlotter
+// ====================================================
+
+//===== Flags for UnitPlotter =========================
+marketStyle: 20
+outputRootFileHistos: UnitPlots.root

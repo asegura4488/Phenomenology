@@ -1,0 +1,13 @@
+import model sm
+define jet = j b b~
+generate p p > jet @1 
+add process p p > jet jet @2
+add process p p > jet jet jet @3
+add process p p > jet jet jet jet @4
+output FOLDEREVENTS/SUBFOLDERNAME_SEED -f
+launch -m
+NUMBERCORES
+pythia=OFF 
+FOLDEREVENTS/RunCards/run_card_SEED.dat
+FOLDEREVENTS/RunCards/pythia_card_SEED.dat
+FOLDEREVENTS/ParamCard/param_card.dat

@@ -1,0 +1,38 @@
+// ===== Commom flags =================================
+process: signal2
+scaleFactor: 1.0
+scaleFactorError: 0.0
+// ====================================================
+
+// ===== Flags for NormalizeHistos.cpp ================
+rootfile: FILE/monotop1jet_right.root
+directory: DIRECTORY
+xsection: 124
+skimmingEff: 1.0
+skimmingEffError: 0.0
+luminosity: 30.
+isdata: False
+OutputFilePath: PATH
+NormOutputFileName: normalizedHistos_signal_1jet_right.root
+NormToOneOutputFileName: normalizedToOneHistos_signal2.root
+// ====================================================
+
+// ===== Flags for StackPlotter.cpp ===================
+usedata: False
+setLogScale: False
+isSignal: True
+Normalizedrootfile: Normalize_monotop_jun_9/After_muon/normalizedHistos_signal_1jet_right.root
+applyScaleFactor: False
+rebinHistoName: 
+rebinFactor: 1
+lineStyle: 2
+lineWidth: 3
+legend: Signal-right 1-jet
+color: 36
+outputRootFileStackedHistos: StackedPlots.root
+logFilename: output_NormalizePlotter
+// ====================================================
+
+//===== Flags for UnitPlotter =========================
+marketStyle: 20
+outputRootFileHistos: UnitPlots.root

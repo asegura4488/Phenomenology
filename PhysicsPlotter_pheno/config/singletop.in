@@ -1,0 +1,46 @@
+// ===== Commom flags =================================
+process: singletop 
+scaleFactor: 1.0
+scaleFactorError: 0.0
+// ====================================================
+
+// ===== Flags for NormalizeHistos.cpp ================
+rootfile: FILE/singletop_none-1.root
+directory: DIRECTORY
+xsection: 430400.
+skimmingEff: 1.0
+skimmingEffError: 0.0
+luminosity: 30.
+isdata: False
+OutputFilePath: PATH
+NormOutputFileName: normalizedHistos_singletop.root
+NormToOneOutputFileName: normalizedToOneHistos_singletop.root
+// ====================================================
+
+// ===== Flags for StackPlotter.cpp ===================
+usedata: False
+setLogScale: False
+isSignal: False
+Normalizedrootfile: INPUTDIREC/normalizedHistos_singletop.root
+applyScaleFactor: True
+rebinHistoName: 
+rebinFactor: 1
+lineStyle: 1
+lineWidth: 1
+legend: singletop
+color: 92
+outputRootFileStackedHistos: StackedPlots.root
+logFilename: output_NormalizePlotter
+// ====================================================
+
+//======Flags for Limits
+
+inputDataDrivenBG: True
+
+//===== Flags for UnitPlotter =========================
+marketStyle: 24
+outputRootFileHistos: UnitPlots.root
+
+//====== Flags for EfficiencyPlotter =================
+NormalizedrootfileNum: INPUTDIRECNUM/normalizedHistos_singletop.root
+NormalizedrootfileDen: INPUTDIRECDEN/normalizedHistos_singletop.root

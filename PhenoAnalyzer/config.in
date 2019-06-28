@@ -1,0 +1,16 @@
+b_jet_pt_min 40.
+b_Eta_pt_max 40.
+lead_jet_ISR_pt 100.
+lead_jet_pt_min 20.
+lead_jet_ISR_eta 2.4
+muon_pt_min 20.
+muon_pt_max 40.
+lepton_pt_min 10.
+lepton_pt_max 40.
+lepton_eta_max 2.4
+muon_eta_min 2.1
+et_miss 200.
+b_jet_eta 0.
+delta_R_jet_electron 0.4
+delta_R_jet_muon 0.4
+delta_R_jet_tau 0.4

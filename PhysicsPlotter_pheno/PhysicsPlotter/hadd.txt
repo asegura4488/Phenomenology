@@ -1,0 +1,3 @@
+sh add_samples_2.sh Diboson WWinclusive ZZinclusive WZinclusive Normalized_VBF_mumu_SR_v1
+sh add_samples_dy.sh DYToLL DYToLL_10to50 DYToLL_0j DYToLL_1j DYToLL_2j DYToLL_3j DYToLL_4j Normalized_VBF_mumu_SR_v1
+sh add_samples_temp.sh wjets wjets_j1 wjets_j2 wjets_j3 wjets_j4 Normalized_VBF_mumu_SR_v1

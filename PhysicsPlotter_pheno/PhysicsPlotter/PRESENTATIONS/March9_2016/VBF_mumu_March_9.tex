@@ -1,0 +1,490 @@
+\documentclass{beamer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% YORK THEME %%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%% COLORS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{Yorkred}{rgb}{0.83,0,0}
+
+\setbeamercolor{section in toc}{fg=black,bg=white}
+\setbeamercolor{alerted text}{fg=Yorkred!90!gray}
+\setbeamercolor*{palette primary}{fg=Yorkred!90!black,bg=gray!25!white}
+\setbeamercolor*{palette secondary}{fg=Yorkred!90!black,bg=gray!10!white}
+\setbeamercolor*{palette tertiary}{bg=Yorkred,fg=gray!10!white}
+\setbeamercolor*{palette quaternary}{fg=Yorkred!90!black,bg=gray!5!white}
+
+\setbeamercolor*{sidebar}{fg=Yorkred!90!black,bg=gray!15!white}
+
+\setbeamercolor*{palette sidebar primary}{fg=Yorkred!10!black}
+\setbeamercolor*{palette sidebar secondary}{fg=white}
+\setbeamercolor*{palette sidebar tertiary}{fg=Yorkred!50!black}
+\setbeamercolor*{palette sidebar quaternary}{fg=gray!10!white}
+
+%\setbeamercolor*{titlelike}{parent=palette primary}
+\setbeamercolor{titlelike}{parent=palette primary,fg=Yorkred}
+\setbeamercolor{frametitle}{bg=gray!10!white}
+\setbeamercolor{frametitle right}{bg=gray!60!white}
+
+\setbeamercolor*{separation line}{}
+\setbeamercolor*{fine separation line}{}
+\setbeamercolor{itemize item}{fg=Yorkred!80!black,bg=Yorkred!80!black}
+\setbeamercolor{itemize subitem}{fg=Yorkred!80!black,bg=York!80!black}
+%\setbeamercolor{enumerate item}{bg=Yorkred!80!black,fg=gray!10!white} %Yorkred for fancy balls is not implemented yet
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mode<presentation>
+\useinnertheme[shadow=true]{rounded}
+\useoutertheme{infolines}
+\setbeamerfont{block title}{size={}}
+\setbeamercolor{titlelike}{parent=structure,bg=gray!7!white}
+\setbeamertemplate{itemize item}[circle] 
+\setbeamertemplate{itemize subitem}[triangle] 
+\mode
+<all>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\title{ SUSY VBF @ 13 TeV}
+\author{}
+\institute[Uniandes, Vandy]{Uniandes, Vanderbilt}
+\date{March. 9,  2016}
+%%%\logo{\includegraphics[width=0.19\textwidth]{YorkU_Logo.png}}
+
+\begin{document}
+\begin{frame}
+ \centering
+ {\bfseries VBF $\mu \mu$ Channel Report} \\
+  
+  \vspace{2.0cm}
+  
+  Andr\'es Fl\'orez$^{1}$, Alfredo Gurrola$^{2}$, Leonardo Cabrera$^{1}$, Carlos \'Avila$^{1}$ \\
+  
+  \vspace{0.5cm}
+  
+Universidad de los Andes$^{1}$ (Colombia), Vanderbilt University$^{2}$ (USA)
+  
+  \vspace{2.0cm}
+
+March 9 2016
+
+%  \titlepage
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Samples
+
+\begin{frame}
+
+\frametitle{MC and Data Samples}
+
+ \begin{table}[htbp]
+\tiny{
+\begin{center}
+\begin{tabular}{lc}\hline\hline
+Sample & Cross section (pb) \\
+
+ \hline 
+ $QCD\_Pt-20toInf\_MuEnrichedPt15\_Asympt25ns$ & 720648000 \\
+ $TTJets\_madgraphMLM\_Asympt25ns$  & 831.76 \\
+$ZZ\_Asympt25ns$  & 16.523 \\
+$WW\_Asympt25ns$  & 115.0 \\
+$WZ\_Asympt25ns$  & 47.30 \\
+$WJetsToLNu\_HT-0to100\_Asympt25ns$  & 61526.7 \\
+$WJetsToLNu\_HT-100to200\_Asympt25ns$  & 1632.54 \\
+$WJetsToLNu\_HT-200to400\_Asympt25ns $ & 436.60 \\
+$WJetsToLNu\_HT-400to600\_Asympt25ns$  & 59.37 \\
+$WJetsToLNu\_HT-600toInf\_Asympt25ns$  & 22.78\\
+$DYJetsToLL\_M-50\_HT-0to100\_Asympt25ns$  & 6025.2 \\
+$DYJetsToLL\_M-50\_HT-100to200\_Asympt25ns$  & 171.59 \\
+$DYJetsToLL\_M-50\_HT-200to400\_Asympt25ns$  & 52.62 \\
+$DYJetsToLL\_M-50\_HT-400to600\_Asympt25ns $ & 6.77 \\
+$DYJetsToLL\_M-50\_HT-600toInf\_Asympt25ns$  & 2.72 \\
+$DYJetsToLL\_M-5to50\_Asympt25ns$  & 71310. \\
+ \hline 
+ 
+ $SingleMuon\_Run2015C\_ReReco\_25ns\_MiniAODv2\_December2015$ & \\
+$SingleMuon\_Run2015D\_PromptReco\_v4\_25ns_MiniAODv2\_December2015$& \\
+$SingleMuon\_Run2015D\_ReMiniAOD\_25ns\_MiniAODv2\_December2015$ & \\
+ \textcolor{red}{Total lumi} & 2110. pb \\
+ \hline 
+ 
+  \end{tabular}
+\end{center}
+}
+\end{table}
+
+\end{frame}
+
+%%%%%%%%% Event selection criteria
+
+\begin{frame}
+\frametitle{Event Selection Criteria}
+
+\begin{table}[htbp]
+\tiny{
+\begin{center}
+\begin{tabular}{lc}\hline\hline
+
+Background & Events \\
+
+ \hline 
+ \textcolor{blue}{Central Selections} & \\
+ \hline 
+  Trigger & HLT\_IsoMu24\_eta2p1\_v, HLT\_IsoMu18\_v \\
+  $\mu$  $p^{lead}_{T}$ & $> 20$ GeV \\
+  $\mu$  $|\eta^{lead}|$  & $ > 2.1$\\
+  $\mu$ $p^{sub-lead}_{T}$ & $ > 10$ GeV \\
+  $\mu$  $|\eta^{sub-lead}| $ & $> 2.1$\\
+  $\mu^{lead}$ \& $\mu^{sub-lead}$ & Tight ID \\
+  $p^{lead}_{T} (jet)$ & $> 50$ GeV \\
+  $|\eta^{lead}| (jet)$ & $> 5.$  \\
+  $p^{sub-lead}_{T} (jet)$ & $> 50$ GeV \\
+  $|\eta^{sub-lead}| (jet)$ & $> 5.$  \\
+  $N_{b-jets}$ & 0 \\
+  $E^{miss}_{T}$ & $> 75$ GeV \\
+  Overlaps removal & Yes \\ 
+  \hline 
+  \textcolor{blue}{VBF Selections} & \\
+   \hline 
+  $\eta_{j1} \cdot \eta_{j2}$ & $< 0$ \\
+  $|\Delta \eta(j_{1}, j_{2})|$ & $> 4.2$ \\
+  $m_{j1, j2}$ & $> 250$ GeV \\
+  
+   
+ \hline 
+ 
+ \end{tabular}
+\end{center}
+}
+\end{table}
+
+\end{frame}
+
+
+%%%%%% PU weights
+
+
+\begin{frame}
+\frametitle{Number of Primary Vertices}
+\tiny{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~No PU Weights~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~With PU Weights}\\
+\begin{center}
+ 
+   \includegraphics[width=0.45\textwidth, height=0.50\textheight]{/Users/florez/PhysicsPlotter_13TeV/Npv_CR1_noPUweights.pdf}
+  \includegraphics[width=0.45\textwidth, height=0.50\textheight]{/Users/florez/PhysicsPlotter_13TeV/Npv_CR1_with_PUweights.pdf}
+  
+ 
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Number of Primary Vertices}
+\tiny{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~With PU Weights - Linear~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~With PU Weights - log}\\
+\begin{center}
+ 
+   \includegraphics[width=0.45\textwidth, height=0.50\textheight]{/Users/florez/PhysicsPlotter_13TeV/Npv_CR1_with_PUweights.pdf}
+  \includegraphics[width=0.45\textwidth, height=0.50\textheight]{/Users/florez/PhysicsPlotter_13TeV/Npv_CR1_with_PUweights_log.pdf}
+  
+ 
+\end{center}
+
+\end{frame}
+
+%%%%%%%%%%%% Kinematic
+
+\begin{frame}
+\frametitle{Kinematic Distributions - Muon1}
+\tiny{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~RecoMuon2Nmax~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~RecoSecondLeadingJetNmin}\\
+\begin{center}
+ 
+   \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter/Stacked_VBF_mumu_SR_v1/RecoMuon2Nmax/FirstLeadingMuon1Pt_0.pdf}
+  \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter/Stacked_VBF_mumu_SR_v1/RecoSecondLeadingJetNmin/FirstLeadingMuon1Pt_0.pdf}\\
+  
+ 
+   \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter/Stacked_VBF_mumu_SR_v1/RecoMuon2Nmax/FirstLeadingMuon1Eta_0.pdf}
+  \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter/Stacked_VBF_mumu_SR_v1/RecoSecondLeadingJetNmin/FirstLeadingMuon1Eta_0.pdf}\\
+ 
+\end{center}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Kinematic Distributions - Jet1 CR1}
+\tiny{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~RecoMuon2Nmax~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~RecoSecondLeadingJetNmin}\\
+\begin{center}
+ 
+   \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter/Stacked_VBF_mumu_SR_v1/RecoMuon2Nmax/FirstLeadingJetPt_0.pdf}
+  \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter/Stacked_VBF_mumu_SR_v1/RecoSecondLeadingJetNmin/FirstLeadingJetPt_0.pdf}\\
+  
+  
+    \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter/Stacked_VBF_mumu_SR_v1/RecoMuon2Nmax/FirstLeadingJetEta_0.pdf}
+  \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter/Stacked_VBF_mumu_SR_v1/RecoSecondLeadingJetNmin/FirstLeadingJetEta_0.pdf}
+ 
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Kinematic Distributions - Jet1 CR1}
+\tiny{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~RecoMuon2Nmax~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~RecoSecondLeadingJetNmin}\\
+\begin{center}
+   \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter/Stacked_VBF_mumu_SR_v1/RecoMuon2Nmax/Met_0.pdf}
+  \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter/Stacked_VBF_mumu_SR_v1/RecoSecondLeadingJetNmin/Met_0.pdf}\\
+  
+ \begin{itemize}
+   \item Total number of data events after the FirstLeadingJetNmin cut: 24687
+   \item Total number of BG events after the FirstLeadingJetNmin cut: 21806.7
+   \item BG over MC ratio: 0.88. There is a 12\% more data than MC BGs. Perhaps missing BGs?
+   \item Will create CRs for DY and ttbar to see if there are scale factors that might account for the difference. 
+ \end{itemize}
+   
+\end{center}
+
+\end{frame}
+
+
+%%%%%%% SF DY
+
+
+\begin{frame}
+\frametitle{Kinematic Distributions - SF on DY: 1.1}
+\tiny{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~RecoMuon2Nmax~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~RecoSecondLeadingJetNmin}\\
+\begin{center}
+ 
+   \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter/Stacked_VBF_mumu_SR_v1/RecoMuon2Nmax/FirstLeadingMuon1Pt_0.pdf}
+  \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter/Stacked_VBF_mumu_SR_v1_DYsf1p1/RecoMuon2Nmax/FirstLeadingMuon1Pt_0.pdf}\\
+  
+ 
+   \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter/Stacked_VBF_mumu_SR_v1/RecoMuon2Nmax/FirstLeadingMuon1Eta_0.pdf}
+  \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter/Stacked_VBF_mumu_SR_v1_DYsf1p1/RecoMuon2Nmax/FirstLeadingMuon1Eta_0.pdf}\\
+ 
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Kinematic Distributions - SF on DY: 1.1}
+\tiny{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~RecoMuon2Nmax~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~RecoSecondLeadingJetNmin}\\
+\begin{center}
+ 
+   \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter/Stacked_VBF_mumu_SR_v1/RecoMuon2Nmax/FirstLeadingMuon1Eta_0.pdf}
+  \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter/Stacked_VBF_mumu_SR_v1_DYsf1p1/RecoMuon2Nmax/FirstLeadingMuon1Eta_0.pdf}\\
+  
+ 
+   \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter/Stacked_VBF_mumu_SR_v1/RecoSecondLeadingJetNmin/FirstLeadingMuon1Eta_0.pdf}
+  \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter/Stacked_VBF_mumu_SR_v1_DYsf1p1/RecoSecondLeadingJetNmin/FirstLeadingMuon1Eta_0.pdf}\\
+ 
+\end{center}
+
+\end{frame}
+
+ 
+ %%%%%%%% Efficiencies
+ 
+ %%%%% DY
+ 
+ \begin{frame}
+   \begin{table}[htbp]
+\tiny{
+\begin{tabular}{lccc}\hline\hline
+        Cut Name &      $DYTOLL_{10to50}$ &   $DY\rightarrow\ell\ell_{HT-0To100}$ &    $DY\rightarrow\ell\ell_{HT-100To200}$     \\  
+\hline
+        
+Trigger                             &     $0.141 \pm 0.001$ &    $19.3 \pm 0.013$ &    $24.7 \pm 0.03$     \\ 
+ Muon1Nmin                   &     $96.8 \pm 0.15$       &     $98 \pm 0.011$ &     $98.7 \pm 0.01$      \\  
+ Muon1Nmax                  &     $100 \pm 0.01$    &     $100 \pm 7.1e-5$ &     $100 \pm 0.0002$      \\  
+ Muon2Nmin                   &     $26 \pm  0.39$          &     $54.9 \pm 0.04$ &     $53.3 \pm 0.06$       \\  
+ Muon2Nmax                  &     $100 \pm 0.03$     &     $100 \pm 0.0001$ &     $100 \pm 0.0003$      \\  
+ FirstLeadingJetNmin      &     $2.61 \pm 0.29$      &     $0.379 \pm 0.007$ &     $14.9 \pm 0.06$       \\  
+ SecondLeadingJetNmin &     $29.1 \pm   4.9$       &     $11.6 \pm 0.5$ &     $27.6 \pm 0.20$      \\  
+ \textcolor{red}{SusyCombiNmin}            &     $0 \pm 1.08e-05$               &     $0 \pm 1.17e-5$ &     $0.0139 \pm 0.01$       \\  
+ DiMuonCombiNmin        &     -                                         &     -                          &     $100 \pm  31.8$      \\  
+ DiJetCombiNmin             &     -                                        &      -                         &     $100 \pm  31.8$      \\  
+\hline
+      Events &   $0 \pm  24.03$ &         $0 \pm  2.11$ &         $0.27 \pm  0.19$         \\ 
+\hline \hline
+\end{tabular}
+}
+\end{table}
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+   \begin{table}[htbp]
+\tiny{
+\begin{tabular}{lccc}\hline\hline
+           Cut Name &           $DY\rightarrow\ell\ell_{HT-200To400}$    &  $DY\rightarrow\ell\ell_{HT-400To600}$  & $DY\rightarrow\ell\ell_{HT-600ToInf}$  \\  
+\hline
+        
+Trigger                             &       $25.9 \pm 0.04$ &    $27.3 \pm 0.04$ &    $28.3 \pm 0.04$ \\ 
+ Muon1Nmin                   &      $98.4 \pm 0.03$ &     $97.9 \pm 0.03$ &     $96.8 \pm 0.03$ \\  
+ Muon1Nmax                  &      $100 \pm 0.001$ &     $100 \pm 0.0004$ &     $100 \pm 0.0004$ \\  
+ Muon2Nmin                   &      $53 \pm 0.101$ &     $52.6 \pm 0.09$ &     $51.9 \pm 0.10$ \\  
+ Muon2Nmax                  &     $100 \pm 0.001$ &     $100 \pm 0.001$ &     $100 \pm 0.01$ \\  
+ FirstLeadingJetNmin      &    $13.7 \pm 0.09$ &     $5.26 \pm 0.06$ &     $2.5 \pm 0.04$ \\  
+ SecondLeadingJetNmin &    $69.1 \pm 0.35$ &     $90.5 \pm 0.33$ &     $94.6 \pm  0.38$ \\  
+  \textcolor{red}{SusyCombiNmin}        &      $0.057 \pm 0.02$ &     $0.849 \pm 0.11$ &     $5.26 \pm 0.39$ \\  
+ DiMuonCombiNmin        &   $100 \pm  13.4$ &     $100 \pm  1.87$ &     $97.7 \pm  1.13$ \\  
+ DiJetCombiNmin             &   $85.7 \pm  13.2$ &     $35 \pm  6.16$ &     $11.1 \pm   2.4$ \\  
+\hline
+      Events &        $0.68 \pm  0.28$ &         $0.28 \pm  0.06$ &         $0.11 \pm  0.03$ \\ 
+\hline \hline
+\end{tabular}
+}
+\end{table}
+
+
+
+ \end{frame}
+
+%%%%%%% W+jets
+ 
+ \begin{frame}
+ 
+ \begin{table}[htbp]
+\tiny{
+\centering
+\begin{tabular}{lccccc}\hline\hline
+   CutName    &     $t\bar{t}$ &    $QCD_{Pt-20toInf}^{MuEnri}$ &          $WW_{inclus}$ &    $ZZ_{inclus}$ &      $WZ_{inclus}$\\  
+   \hline
+Trigger                           &     $13.3 \pm 0.01$    &    $1.01 \pm 0.003$ &    $10.2 \pm 0.031$ &    $7.74 \pm 0.03$ &    $5.26 \pm 0.02$ \\ 
+Muon1Nmin                   &     $95.4 \pm 0.02$ &     $60.5 \pm 0.13$ &     $97.1 \pm 0.053$ &     $97.7 \pm 0.06$ &     $98.4 \pm 0.05$ \\  
+Muon1Nmax                  &     $100 \pm 8.11e-5$ &     $100 \pm 0.001$ &     $100 \pm 0.001$ &     $100 \pm 0.002$ &     $100 \pm 0.002$ \\  
+\textcolor{blue}{Muon2Nmin}                   &     $6.08 \pm 0.02$ &     $1.29 \pm 0.04$ &     $5.05 \pm 0.07$ &     $20.8 \pm  0.15$ &     $55.5 \pm  0.22$ \\  
+FirstLeadingJetNmin      &     $18.1 \pm 0.13$ &     $8.96 \pm 0.89$ &     $1.73 \pm 0.19$ &     $8.15 \pm 0.22$ &     $8.61 \pm 0.167$ \\  
+SecLeadingJetNmin &     $49.1 \pm 0.40$ &     $37.6 \pm  5.02$ &     $31.8 \pm  5.0$ &     $31.7 \pm  1.32$ &     $29.4 \pm 0.92$ \\  
+ \textcolor{red}{SusyCombiNmin}            &     $0.614 \pm 0.09$ &     $2.86 \pm  2.82$ &     $0 \pm 0.0001$ &     $0.255 \pm 0.25$ &     $0.14 \pm  0.14$ \\  
+DiMuonCombiNmin        &     $97.9 \pm   2.1$ &     $0 \pm 7.64e-6$ &     -                                &     $100 \pm  43.7$ &     $100 \pm  43.7$ \\  
+DiJetCombiNmin            &     $78.3 \pm  6.08$ &     -                          &     -                               &     $100 \pm  43.7$ &     $0 \pm 0.0001$ \\  
+\hline
+     Events &    $5.57 \pm  0.93$ &         $0 \pm  72.40$ &         $0 \pm  0.37$ &         $0.12 \pm  0.10$ &         $0 \pm  0.05$  \\ 
+\hline \hline
+\end{tabular}
+}
+\end{table}
+
+ 
+ \begin{table}[htbp]
+\tiny{
+\begin{center}
+\begin{tabular}{lccccc}\hline\hline
+      Cut Name &      $wjets_{j0}$ &            $wjets_{j1}$  &          $wjets_{j2}$ &            $wjets_{j3}$ &          $wjets_{j4}$ \\  
+ \hline    
+ TriggerNmin  &  $12.3 \pm 0.004$ &    $15.5 \pm 0.011$ &    $16.5 \pm 0.016$ &    $17.7 \pm 0.03$ &    $18.7 \pm 0.04$ \\ 
+ Muon1Nmin &     $96.1 \pm 0.007$ &     $97.4 \pm 0.013$ &     $96.8 \pm 0.019$ &     $95.8 \pm 0.04$ &     $94.5 \pm 0.05$ \\  
+ \textcolor{blue}{Muon2Nmin}  &     $0.00524 \pm 0.0002$ &     $0.0194 \pm 0.0011$ &     $0.023 \pm 0.002$ &     $0.0295 \pm 0.003$ &     $0.0297 \pm 0.004$ \\  
+ FirstLeadingJetNmin &     $0.234 \pm 0.23$ &     $8.5 \pm  1.63$ &     $18.8 \pm  2.83$ &     $4.65 \pm  2.27$ &     $3.7 \pm  2.57$ \\  
+ SecoLeadingJetNmin &     $0 \pm 1.4e-6$ &     $28 \pm  8.98$ &     $66.7 \pm  7.86$ &     $100 \pm  20.5$ &     $0 \pm 9.7e-5$ \\  
+ SusyCombiNmin             &            -&     $0 \pm 9.97e-6$ &     $0 \pm 1.9e-5$ &     $0 \pm 5.8e-5$ &     - \\  
+ DiMuonCombiNmin         &          - &      - &     - &     - &     - \\  
+ DiJetCombiNmin              &         - &      - &     - &     - &     - \\  
+\hline
+Events  &  $0 \pm  2.69$ &         $0 \pm  0.51$ &         $0 \pm  0.27$ &         $0 \pm  0.11$ &         $0 \pm  0.07$ \\
+\hline \hline
+\end{tabular}
+\end{center}
+}
+\end{table}
+
+ 
+ 
+ \end{frame}
+ 
+ %%%%%%%%%%%%%% summary table
+
+
+ 
+ \begin{frame}
+   
+   \frametitle{Final MC Number of Events}
+ 
+ \begin{itemize}
+   \item No charge requirement is been applied to the muons.
+   \item Nevertheless, all the events that survived are OS.
+   \item As in the 8 TeV analysis, the dominant BGs are $t\bar{t}$ and DY.
+ \end{itemize}
+   
+   
+\begin{table}[htbp]
+\tiny{
+\begin{center}
+\begin{tabular}{lc}\hline\hline
+
+Background & Events \\
+
+ \hline 
+
+  $t\bar{t}$ & \textcolor{red}{$5.57 \pm  0.93$}\\
+  $DY \rightarrow \mu \mu$ & $1.34 \pm  24.12$ \\
+  QCD    & $0. \pm  72.40$ \\
+  W+jets & $0 \pm 2.75$ \\
+  VV       & $0. \pm 0.39$  \\
+ \hline 
+ 
+ \end{tabular}
+\end{center}
+}
+\end{table}
+
+ \end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%
+%\begin{frame}
+%\frametitle{$t\bar{t}$ CR}
+%
+%\begin{itemize}
+% \item SR selections but require at least 1 b-jet.
+% \item The distributions below, are after the b-jet requirement.
+% \item After applying the $E^{miss}_{T}$ cut, the statistics is significantly reduced (see next slide).
+%\end{itemize}
+% \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter_13TeV/Stacked_VBF_mumu_ttbar_CR1/RecoBJetNmax/DiJetMass_0.pdf}
+%  \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter_13TeV/Stacked_VBF_mumu_ttbar_CR1/RecoBJetNmax/Met_0.pdf}
+%  \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter_13TeV/Stacked_VBF_mumu_ttbar_CR1/RecoBJetNmax/LeadDiJetDeltaEta_0.pdf}
+%  
+%\end{frame}
+% 
+% \begin{frame}
+% \frametitle{$t\bar{t}$ CR After $E^{miss}_{T} > 75$ GeV}
+% \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter_13TeV/Stacked_VBF_mumu_ttbar_CR1/SusyCombinationsNmin/DiJetMass_0.pdf}
+%  \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter_13TeV/Stacked_VBF_mumu_ttbar_CR1/SusyCombinationsNmin/Met_0.pdf}
+%  \includegraphics[width=0.35\textwidth, height=0.40\textheight]{/Users/florez/PhysicsPlotter_13TeV/Stacked_VBF_mumu_ttbar_CR1/SusyCombinationsNmin/LeadDiJetDeltaEta_0.pdf}\\
+% 
+% \begin{table}[htbp]
+%\tiny{
+%\begin{center}
+%\begin{tabular}{lc}\hline\hline
+%
+%Background & Events \\
+%
+% \hline 
+%
+%  $t\bar{t}$ & \textcolor{red}{$15.02$}\\
+%  $DY \rightarrow \mu \mu$ & $0.4$ \\
+%  QCD    & $0.$ \\
+%  $W+jets$ & $0.$ \\
+%  VV       & $0. $  \\
+%  data & 14 \\
+% \hline 
+% Total BG & 15.06 \\
+% Purity & 99.7 \% \\
+% SF & 1.1 \\
+% \hline
+% 
+% \end{tabular}
+%\end{center}
+%}
+%\end{table}
+% 
+% \end{frame}
+ 
+ %%%%%%%% Summary
+ 
+ \begin{frame}
+  \frametitle{Summary}
+  \begin{itemize}
+  \item Correct PU weights have been implemented.
+  \item It seems there is a SF of 1.1 on the DY BG. We need to obtain the CR and measure the exact SF.
+   \item Need the signal samples to study the muonID and start the optimization of the cuts.
+  \end{itemize}
+ \end{frame}
+ 
+\end{document}

@@ -1,0 +1,51 @@
+
+
+ROOTFile /home/alejandro/root_pheno/PhysicsPlotter_pheno/data/DY+jets_none-1.root
+Directory No_cuts
+Process DYTOLL
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 0
+EventsAnalysed 1.45973e+07
+EventsPassing 0
+CumulativeEfficiency 0
+
+ROOTFile /home/alejandro/root_pheno/PhysicsPlotter_pheno/data/W+jets_none-1.root
+Directory No_cuts
+Process wjets 
+SkimmingEfficiency 1
+SkimmingEfficiencyError 1
+NumberOfHistorgams 33
+EventsAnalysed 1.53865e+07
+EventsPassing 0
+CumulativeEfficiency 0
+
+ROOTFile /home/alejandro/root_pheno/PhysicsPlotter_pheno/data/singletop_none-1.root
+Directory No_cuts
+Process singletop 
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 33
+EventsAnalysed 1.84408e+06
+EventsPassing 0
+CumulativeEfficiency 0
+
+ROOTFile /home/alejandro/root_pheno/PhysicsPlotter_pheno/data/monotop_none-1.root
+Directory No_cuts
+Process signal
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 33
+EventsAnalysed 2e+06
+EventsPassing 0
+CumulativeEfficiency 0
+
+ROOTFile /home/alejandro/root_pheno/PhysicsPlotter_pheno/data/monotop1jet_none-1.root
+Directory No_cuts
+Process signal2
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 33
+EventsAnalysed 688192
+EventsPassing 0
+CumulativeEfficiency 0

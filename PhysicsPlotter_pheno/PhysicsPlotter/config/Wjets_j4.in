@@ -1,0 +1,38 @@
+// ===== Commom flags =================================
+process: wjets_j4
+scaleFactor: 1.0
+scaleFactorError: 0.0
+// ====================================================
+
+// ===== Flags for NormalizeHistos.cpp ================
+rootfile: FILE/WJetsToLNu_HT-600toInf_Asympt25ns.root
+directory: DIRECTORY
+xsection: 22.78
+skimmingEff: 0.988353
+skimmingEffError: 0.0
+luminosity: 2110.
+isdata: False
+OutputFilePath: PATH
+NormOutputFileName: normalizedHistos_wjets_j4.root
+NormToOneOutputFileName: normalizedToOneHistos_wjets_j4.root
+// ====================================================
+
+// ===== Flags for StackPlotter.cpp ===================
+usedata: True
+setLogScale: True
+isSignal: False
+Normalizedrootfile: INPUTDIREC/normalizedHistos_wjets_j4.root
+applyScaleFactor: False
+rebinHistoName: 
+rebinFactor: 1
+lineStyle: 1
+lineWidth: 1
+legend: W+jets
+color: 212
+outputRootFileStackedHistos: StackedPlots.root
+logFilename: output_NormalizePlotter
+// ====================================================
+
+//===== Flags for UnitPlotter =========================
+marketStyle: 20
+outputRootFileHistos: UnitPlots.root

@@ -1,0 +1,41 @@
+
+
+ROOTFile /home/asus/MadGraph_Pythia_Delphes_PGS/DelphesAnalyzer_staus/PhysicsPlotter_pheno/data/DY+jets.root
+Directory Staus_without_elec_and_muon_1Tau
+Process DYTOLL
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 0
+EventsAnalysed 2.91968e+07
+EventsPassing 2.71542e+06
+CumulativeEfficiency 0.093004
+
+ROOTFile /home/asus/MadGraph_Pythia_Delphes_PGS/DelphesAnalyzer_staus/PhysicsPlotter_pheno/data/W+jets.root
+Directory Staus_without_elec_and_muon_1Tau
+Process wjets 
+SkimmingEfficiency 1
+SkimmingEfficiencyError 1
+NumberOfHistorgams 20
+EventsAnalysed 4.30756e+07
+EventsPassing 3.61608e+06
+CumulativeEfficiency 0.0839473
+
+ROOTFile /home/asus/MadGraph_Pythia_Delphes_PGS/DelphesAnalyzer_staus/PhysicsPlotter_pheno/data/signal1.root
+Directory Staus_without_elec_and_muon_1Tau
+Process signal
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 20
+EventsAnalysed 1e+06
+EventsPassing 341961
+CumulativeEfficiency 0.341961
+
+ROOTFile /home/asus/MadGraph_Pythia_Delphes_PGS/DelphesAnalyzer_staus/PhysicsPlotter_pheno/data/signal2.root
+Directory Staus_without_elec_and_muon_1Tau
+Process signal2
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 20
+EventsAnalysed 1e+06
+EventsPassing 353128
+CumulativeEfficiency 0.353128

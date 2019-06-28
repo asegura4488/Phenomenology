@@ -1,0 +1,51 @@
+
+
+ROOTFile /home/masegura10/root_pheno/PhysicsPlotter_pheno/data/DY+jets_none-1.root
+Directory After_mt_only
+Process DYTOLL
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 0
+EventsAnalysed 34078
+EventsPassing 0
+CumulativeEfficiency 0
+
+ROOTFile /home/masegura10/root_pheno/PhysicsPlotter_pheno/data/W+jets_none-1.root
+Directory After_mt_only
+Process wjets 
+SkimmingEfficiency 1
+SkimmingEfficiencyError 1
+NumberOfHistorgams 34
+EventsAnalysed 28946
+EventsPassing 0
+CumulativeEfficiency 0
+
+ROOTFile /home/masegura10/root_pheno/PhysicsPlotter_pheno/data/singletop_none-1.root
+Directory After_mt_only
+Process singletop 
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 34
+EventsAnalysed 48025
+EventsPassing 0
+CumulativeEfficiency 0
+
+ROOTFile /home/masegura10/root_pheno/PhysicsPlotter_pheno/data/monotop_none-1.root
+Directory After_mt_only
+Process signal
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 34
+EventsAnalysed 9007
+EventsPassing 0
+CumulativeEfficiency 0
+
+ROOTFile /home/masegura10/root_pheno/PhysicsPlotter_pheno/data/monotop1jet_none-1.root
+Directory After_mt_only
+Process signal2
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 34
+EventsAnalysed 9867
+EventsPassing 0
+CumulativeEfficiency 0

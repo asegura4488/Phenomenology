@@ -1,0 +1,6 @@
+cp OS_diTau_data.in LS_diMu_data.in
+cp OS_diTau_VBFhiggs.in LS_diMu_VBFhiggs.in
+cp OS_diTau_Wjets.in LS_diMu_Wjets.in
+cp OS_diTau_DYLL.in LS_diMu_DYLL.in
+cp OS_diTau_Diboson.in LS_diMu_Diboson.in
+cp OS_diTau_ttbar.in LS_diMu_ttbar.in

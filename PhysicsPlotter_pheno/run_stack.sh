@@ -1,0 +1,1 @@
+sh RunStackHistos.sh Normalize_directories stack_directories

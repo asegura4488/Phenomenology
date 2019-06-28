@@ -1,0 +1,46 @@
+// ===== Commom flags =================================
+process: t\bar{t}-semi
+scaleFactor: 1.0
+scaleFactorError: 0.0
+// ====================================================
+
+// ===== Flags for NormalizeHistos.cpp ================
+rootfile: FILE/ttbar_semileptonico.root
+directory: DIRECTORY
+xsection: 159400.
+skimmingEff: 1.0
+skimmingEffError: 0.0
+luminosity: 100.
+isdata: False
+OutputFilePath: PATH
+NormOutputFileName: normalizedHistos_ttbar_semi.root
+NormToOneOutputFileName: normalizedToOneHistos_ttbar.root
+// ====================================================
+
+// ===== Flags for StackPlotter.cpp ===================
+usedata: False
+setLogScale: False
+isSignal: False
+Normalizedrootfile: Normalize_monotop_jun_28/No_cuts/normalizedHistos_ttbar_semi.root
+applyScaleFactor: True
+rebinHistoName: 
+rebinFactor: 1
+lineStyle: 1
+lineWidth: 1
+legend: t#bar{t}-semileptonic
+color: 3
+outputRootFileStackedHistos: StackedPlots.root
+logFilename: output_NormalizePlotter
+// ====================================================
+
+//======Flags for Limits
+
+inputDataDrivenBG: True
+
+//===== Flags for UnitPlotter =========================
+marketStyle: 24
+outputRootFileHistos: UnitPlots.root
+
+//====== Flags for EfficiencyPlotter =================
+NormalizedrootfileNum: Normalize_monotop_jun_28/No_cutsNUM/normalizedHistos_ttbar.root
+NormalizedrootfileDen: Normalize_monotop_jun_28/No_cutsDEN/normalizedHistos_ttbar.root

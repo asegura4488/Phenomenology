@@ -1,0 +1,46 @@
+// ===== Commom flags =================================
+process: wjets 
+scaleFactor: 1.0
+scaleFactorError: 0.0
+// ====================================================
+
+// ===== Flags for NormalizeHistos.cpp ================
+rootfile: FILE/W+jets.root
+directory: DIRECTORY
+xsection: 31800.
+skimmingEff: 1.0
+skimmingEffError: 1.0
+luminosity: 30.
+isdata: False
+OutputFilePath: PATH
+NormOutputFileName: normalizedHistos_wjets.root
+NormToOneOutputFileName: normalizedToOneHistos_wjets.root
+// ====================================================
+
+// ===== Flags for StackPlotter.cpp ===================
+usedata: False
+setLogScale: False
+isSignal: False
+Normalizedrootfile: Normalize_directories/Staus_with_one_Tau/normalizedHistos_wjets.root
+applyScaleFactor: False
+rebinHistoName: 
+rebinFactor: 1
+lineStyle: 1
+lineWidth: 1
+legend: W+jets
+color: 2
+outputRootFileStackedHistos: StackedPlots.root
+logFilename: output_NormalizePlotter
+// ====================================================
+
+//======Flags for Limits
+
+inputDataDrivenBG: True
+
+//===== Flags for UnitPlotter =========================
+marketStyle: 22
+outputRootFileHistos: UnitPlots.root
+
+//====== Flags for EfficiencyPlotter =================
+NormalizedrootfileNum: Normalize_directories/Staus_with_one_TauNUM/normalizedHistos_wjets.root
+NormalizedrootfileDen: Normalize_directories/Staus_with_one_TauDEN/normalizedHistos_wjets.root

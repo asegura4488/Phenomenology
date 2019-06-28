@@ -1,0 +1,12 @@
+import model BaryogenX2N1Maj_withLeft
+define jet = b b~ j 
+generate p p > n t , (t > W+ b)   @0
+add process p p > n t~, (t~ > W- b~) @0
+add process p p > n t jet, (t > W+ b)   @1
+add process p p > n t~ jet, (t~ > W- b~) @1
+output FOLDEREVENTS/SUBFOLDERNAME_SEED -f
+launch -m
+NUMBERCORES
+pythia=OFF 
+FOLDEREVENTS/RunCards/run_card_SEED.dat
+FOLDEREVENTS/ParamCard/param_card.dat

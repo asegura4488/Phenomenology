@@ -1,0 +1,6 @@
+cp LS_eMu_Higgs.in OS_eMu_Higgs.in
+cp LS_eMu_Diboson.in OS_eMu_Diboson.in
+cp LS_eMu_data.in OS_eMu_data.in
+cp LS_eMu_ttbar.in OS_eMu_ttbar.in
+cp OS_muTau_Wjets.in OS_eMu_Wjets.in
+cp OS_muTau_DYLL.in OS__eMu_DYLL.in

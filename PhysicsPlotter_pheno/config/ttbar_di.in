@@ -1,0 +1,46 @@
+// ===== Commom flags =================================
+process: t\bar{t}-di
+scaleFactor: 1.0
+scaleFactorError: 0.0
+// ====================================================
+
+// ===== Flags for NormalizeHistos.cpp ================
+rootfile: FILE/ttbar_dileptonico.root
+directory: DIRECTORY
+xsection: 26700.
+skimmingEff: 1.0
+skimmingEffError: 0.0
+luminosity: 100.
+isdata: False
+OutputFilePath: PATH
+NormOutputFileName: normalizedHistos_ttbar_di.root
+NormToOneOutputFileName: normalizedToOneHistos_ttbar_di.root
+// ====================================================
+
+// ===== Flags for StackPlotter.cpp ===================
+usedata: False
+setLogScale: False
+isSignal: False
+Normalizedrootfile: INPUTDIREC/normalizedHistos_ttbar_di.root
+applyScaleFactor: True
+rebinHistoName: 
+rebinFactor: 1
+lineStyle: 1
+lineWidth: 1
+legend: t#bar{t}-dileptonic
+color: 7
+outputRootFileStackedHistos: StackedPlots.root
+logFilename: output_NormalizePlotter
+// ====================================================
+
+//======Flags for Limits
+
+inputDataDrivenBG: True
+
+//===== Flags for UnitPlotter =========================
+marketStyle: 24
+outputRootFileHistos: UnitPlots.root
+
+//====== Flags for EfficiencyPlotter =================
+NormalizedrootfileNum: INPUTDIRECNUM/normalizedHistos_ttbar.root
+NormalizedrootfileDen: INPUTDIRECDEN/normalizedHistos_ttbar.root

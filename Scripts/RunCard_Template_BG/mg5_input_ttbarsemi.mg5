@@ -1,0 +1,11 @@
+import model sm
+generate p p > t t~, (t > w+ b, w+ > j j), (t~ > w- b~, w- > l- vl~)       @0
+add process p p > t t~, (t > w+ b, w+ > l+ vl), (t~ > w- b~, w- > j j)     @0
+add process p p > t t~ j, (t > w+ b, w+ > j j), (t~ > w- b~, w- > l- vl~)  @1
+add process p p > t t~ j, (t > w+ b, w+ > l+ vl), (t~ > w- b~, w- > j j)   @1
+output FOLDEREVENTS/SUBFOLDERNAME_SEED -f
+launch -m
+NUMBERCORES
+pythia=ON
+FOLDEREVENTS/RunCards/run_card_SEED.dat
+FOLDEREVENTS/ParamCard/param_card.dat

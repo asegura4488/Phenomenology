@@ -1,0 +1,38 @@
+// ===== Commom flags =================================
+process: signal2
+scaleFactor: 1.0
+scaleFactorError: 0.0
+// ====================================================
+
+// ===== Flags for NormalizeHistos.cpp ================
+rootfile: FILE/signal2.root
+directory: DIRECTORY
+xsection: 0.00063
+skimmingEff: 1.0
+skimmingEffError: 0.0
+luminosity: 30.
+isdata: False
+OutputFilePath: PATH
+NormOutputFileName: normalizedHistos_signal2.root
+NormToOneOutputFileName: normalizedToOneHistos_signal2.root
+// ====================================================
+
+// ===== Flags for StackPlotter.cpp ===================
+usedata: False
+setLogScale: False
+isSignal: True
+Normalizedrootfile: Normalize_directories/Staus_After_Tau_pt_min_1Tau/normalizedHistos_signal2.root
+applyScaleFactor: False
+rebinHistoName: 
+rebinFactor: 1
+lineStyle: 2
+lineWidth: 3
+legend: signal2
+color: 6
+outputRootFileStackedHistos: StackedPlots.root
+logFilename: output_NormalizePlotter
+// ====================================================
+
+//===== Flags for UnitPlotter =========================
+marketStyle: 20
+outputRootFileHistos: UnitPlots.root

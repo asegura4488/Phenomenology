@@ -1,0 +1,63 @@
+histoName bjet_plus_lep
+xrange_min 0.0
+xrange_max 500.0
+yrange_min 0.001
+yrange_max 100000
+xtitle P_{T}(b)+P_{T}(l)[GeV]
+ytitle Events
+rebin 1
+
+histoName mt
+xrange_min 0.0
+xrange_max 3000.0
+yrange_min 0.0001
+yrange_max 100000
+xtitle m_{T}[GeV]
+ytitle Events
+rebin 5
+
+histoName mt_top
+xrange_min 0.0
+xrange_max 3000.0
+yrange_min 0.0001
+yrange_max 100000
+xtitle m_top_{T}[GeV]
+ytitle Events
+rebin 5
+
+histoName invariant_mbjj
+xrange_min 0.0
+xrange_max 1000
+yrange_min 0.001
+yrange_max 100000
+xtitle invariant_mass_bjj[GeV]
+ytitle Events
+rebin 1
+
+
+histoName met
+xrange_min 0.0
+xrange_max 3000.0
+yrange_min 0.0001
+yrange_max 100000
+xtitle MET[GeV]
+ytitle Events
+rebin 5
+
+histoName bjet_ratio_pT
+xrange_min 0.0
+xrange_max 1.0
+yrange_min 0.001
+yrange_max 100000
+xtitle P_{T}(b)(P_{T}(b)+P_{T}(l))[GeV]
+ytitle Events
+rebin 2
+
+histoName transverse_mass
+xrange_min 0.0
+xrange_max 1000.0
+yrange_min 0.001
+yrange_max 1000000
+xtitle m_{T}(p_{T}^{miss}, #tau_{h}) [GeV]
+ytitle Events
+rebin 2

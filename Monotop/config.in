@@ -1,0 +1,18 @@
+//DeltaR
+DR_jet_elec_max: 0.3
+DR_jet_muon_max: 0.3
+DR_elec_muon_max: 0.3
+// For Jets
+jet_pt_min: 30.0
+jet_eta_max: 2.5
+// For b
+b_pt_min: 70.0
+b_eta_max: 2.5
+// for electrons and muons
+elec_pt_min: 33.0
+muon_pt_min: 33.0
+// Topology
+met_min: 100.0
+mt_min: 0.0
+mt_top_min: 0.0
+blpt_min: 0.0

@@ -1,0 +1,38 @@
+// ===== Commom flags =================================
+process: signal
+scaleFactor: 1.0
+scaleFactorError: 0.0
+// ====================================================
+
+// ===== Flags for NormalizeHistos.cpp ================
+rootfile: FILE/monotop_right.root
+directory: DIRECTORY
+xsection: 36
+skimmingEff: 1.0
+skimmingEffError: 0.0
+luminosity: 30.
+isdata: False
+OutputFilePath: PATH
+NormOutputFileName: normalizedHistos_signal_right.root
+NormToOneOutputFileName: normalizedToOneHistos_signal.root
+// ====================================================
+
+// ===== Flags for StackPlotter.cpp ===================
+usedata: False
+setLogScale: False
+isSignal: True
+Normalizedrootfile: Normalize_monotop?/No_cuts/normalizedHistos_signal_right.root
+applyScaleFactor: False
+rebinHistoName: 
+rebinFactor: 1
+lineStyle: 2
+lineWidth: 3
+legend: Signal-right 0-jets
+color: 38
+outputRootFileStackedHistos: StackedPlots.root
+logFilename: output_NormalizePlotter
+// ====================================================
+
+//===== Flags for UnitPlotter =========================
+marketStyle: 20
+outputRootFileHistos: UnitPlots.root

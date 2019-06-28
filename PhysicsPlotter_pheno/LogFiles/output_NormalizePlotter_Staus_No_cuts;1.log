@@ -1,0 +1,31 @@
+
+
+ROOTFile /Users/florez/PhysicsPlotter_pheno/data/DY+jets.root
+Directory Staus_No_cuts;1
+Process DYTOLL
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 0
+EventsAnalysed 1.75174e+07
+EventsPassing 1.2516e+07
+CumulativeEfficiency 0.714489
+
+ROOTFile /Users/florez/PhysicsPlotter_pheno/data/W+jets.root
+Directory Staus_No_cuts;1
+Process wjets 
+SkimmingEfficiency 1
+SkimmingEfficiencyError 1
+NumberOfHistorgams 19
+EventsAnalysed 2.76936e+07
+EventsPassing 1.804e+07
+CumulativeEfficiency 0.651412
+
+ROOTFile /Users/florez/PhysicsPlotter_pheno/data/signal1.root
+Directory Staus_No_cuts;1
+Process signal
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 19
+EventsAnalysed 1e+06
+EventsPassing 997586
+CumulativeEfficiency 0.997586

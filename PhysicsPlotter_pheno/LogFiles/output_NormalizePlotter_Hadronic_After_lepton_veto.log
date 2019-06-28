@@ -1,0 +1,81 @@
+
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/DY+jets.root
+Directory Hadronic_After_lepton_veto
+Process DYTOLL
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 0
+EventsAnalysed 2.91968e+07
+EventsPassing 7298
+CumulativeEfficiency 0.000249959
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/W+jets.root
+Directory Hadronic_After_lepton_veto
+Process wjets 
+SkimmingEfficiency 1
+SkimmingEfficiencyError 1
+NumberOfHistorgams 52
+EventsAnalysed 4.30756e+07
+EventsPassing 23033
+CumulativeEfficiency 0.000534711
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/singletop.root
+Directory Hadronic_After_lepton_veto
+Process singletop 
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 52
+EventsAnalysed 2.76665e+07
+EventsPassing 3.73494e+06
+CumulativeEfficiency 0.134999
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/ttbar_semileptonico.root
+Directory Hadronic_After_lepton_veto
+Process t\bar{t}-semi
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 52
+EventsAnalysed 3.09062e+07
+EventsPassing 3.58378e+06
+CumulativeEfficiency 0.115957
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/ttbar_dileptonico.root
+Directory Hadronic_After_lepton_veto
+Process t\bar{t}-di
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 52
+EventsAnalysed 1.15527e+07
+EventsPassing 555947
+CumulativeEfficiency 0.0481228
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/monotop1jet_left.root
+Directory Hadronic_After_lepton_veto
+Process signal2
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 52
+EventsAnalysed 1.05552e+06
+EventsPassing 402193
+CumulativeEfficiency 0.381039
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/monotop1jet_right.root
+Directory Hadronic_After_lepton_veto
+Process signal2
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 52
+EventsAnalysed 1.04149e+06
+EventsPassing 342777
+CumulativeEfficiency 0.329123
+
+ROOTFile /home/ma.segura10/PhysicsPlotter_pheno/data/monotop1jet_full.root
+Directory Hadronic_After_lepton_veto
+Process signal2
+SkimmingEfficiency 1
+SkimmingEfficiencyError 0
+NumberOfHistorgams 52
+EventsAnalysed 436060
+EventsPassing 151051
+CumulativeEfficiency 0.3464

@@ -1,0 +1,38 @@
+// ===== Commom flags =================================
+process: DY\rightarrow\l\l+1j
+scaleFactor: 1.0
+scaleFactorError: 0.0
+// ====================================================
+
+// ===== Flags for NormalizeHistos.cpp ================
+rootfile: FILE/DYJetsToLL_M-50_HT-100to200_Asympt25ns.root
+directory: DIRECTORY
+xsection: 171.59
+skimmingEff: 0.987884
+skimmingEffError: 0.0
+luminosity: 2110.
+isdata: False
+OutputFilePath: PATH
+NormOutputFileName: normalizedHistos_DYToLL_1j.root
+NormToOneOutputFileName: normalizedToOneHistos_DYToLL_1j.root
+// ====================================================
+
+// ===== Flags for StackPlotter.cpp ===================
+usedata: True
+setLogScale: True
+isSignal: False
+Normalizedrootfile: INPUTDIREC/normalizedHistos_DYToLL_1j.root
+applyScaleFactor: False
+rebinHistoName: 
+rebinFactor: 1
+lineStyle: 1
+lineWidth: 1
+legend: DY#rightarrowll+jets
+color: 41 
+outputRootFileStackedHistos: StackedPlots.root
+logFilename: output_NormalizePlotter
+// ====================================================
+
+//===== Flags for UnitPlotter =========================
+marketStyle: 20
+outputRootFileHistos: UnitPlots.root

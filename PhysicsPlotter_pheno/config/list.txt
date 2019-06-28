@@ -1,0 +1,10 @@
+cp LS_diTau_DYLL.in  combined_DYLL.in
+cp LS_diTau_Diboson.in combined_Diboson.in
+cp LS_diTau_QCD.in combined_QCD.in
+cp LS_diTau_VBFhiggs.in combined_Higgs.in
+cp LS_diTau_Wjets.in combined_Wjets.in
+cp LS_diTau_data.in combined_data.in
+cp LS_diTau_signal200.in combined_signal200.in
+cp LS_diTau_signleTop.in combined_signleTop.in
+cp LS_diTau_ttbar.in combined_ttbar.in
+cp OS_diTau_VBFZ.in combined_VBFZ.in
